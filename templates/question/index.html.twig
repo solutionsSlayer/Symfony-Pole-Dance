@@ -21,7 +21,7 @@
                 <td>{{ question.content}} </td>
                 <td>
                     {% for answer in question.answers %}
-                       <span class="badge badge-pill {% if answer.correct %}badge-success{% else %}badge-secondary{% endif %} p-2">{{ answer.content }}</span> 
+                        <span class="badge badge-pill {% if answer.correct %}badge-success{% else %}badge-secondary{% endif %} p-2">{{ answer.content }}</span> 
                     {% endfor %}
                 </td>
                 <td>                    

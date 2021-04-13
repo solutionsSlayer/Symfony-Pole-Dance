@@ -19,16 +19,10 @@ class Question
      */
     private $id;
 
-
-
-
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $mediaurl;
-
-
-
 
     /**
      * @ORM\Column(type="text")
@@ -50,7 +44,6 @@ class Question
         $this->answers = new ArrayCollection();
     }
 
-  
     public function getId(): ?int
     {
         return $this->id;
