@@ -37,7 +37,6 @@ class QuizzController extends AbstractController
                 // $form->getData() holds the submitted values
                 // but, the original `$task` variable has also been updated
                 $player = $form->getData();
-               
                 $entityManager = $this->getDoctrine()->getManager();
                 $entityManager->persist($player);
                 $entityManager->flush();
